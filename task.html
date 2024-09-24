@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .food-item {
+            width: 250px;
+            border: 2px solid black;
+            background-color: lightblue;
+
+        }
+
+        .fooditem1,
+        .address {
+            display: flex;
+            gap: 50px;
+
+        }
+
+        @media screen and (max-width:424px) {
+            .food-items {
+                margin-bottom: 10px;
+
+            }
+
+        }
+
+        @media screen and (min-width:425px) and (max-width:768px) {
+            .food-items {
+                display: grid;
+                grid-template-columns: repeat(2,1fr);
+                gap: 20px;
+                align-items: center;
+                justify-content: center;
+
+            }
+        }
+
+        @media screen and (min-width:769px) and (max-width:1024px) {
+            .food-items {
+                display: grid;
+                grid-template-columns:repeat(3,1fr);
+                gap: 20px;
+                justify-content: center;
+
+            }
+        }
+
+        @media screen and (min-width:1025px) and (max-width:1440px) {
+            .food-items {
+                display: grid;
+                grid-template-columns:repeat(4,1fr);
+                gap: 20px;
+                justify-content: center;
+
+            }
+        }
+         @media screen and (min-width:1441px){
+            .food-items{
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            }
+        } 
+
+
+    </style>
+</head>
+
+<body>
+    <div class="food-items">
+        <div class="food-item">
+            <img src="https://b.zmtcdn.com/data/pictures/2/21170172/f37dc70619f41d1b7ef4b2ca264c051e_featured_v2.jpg?output-format=webp"
+                width="250px" height="200px">
+
+            <div class="fooditem1">
+                <h3>TASI CAFE</h3>
+                <span>3.7</span>
+            </div>
+            <div class="address">
+                <h4>banjarahills,hyderabad</h4>
+                <span>5.4km</span>
+            </div>
+        </div>
+
+
+        <div class="food-item">
+            <img src="https://b.zmtcdn.com/data/pictures/2/91752/5ebceba21547577b3f873b2ccdee32a6_featured_v2.jpg?output-format=webp"
+                width="250px" height="200px">
+
+            <div class="fooditem1">
+                <h3>AISH-THE PARK</h3>
+                <span>4.2</span>
+            </div>
+            <div class="address">
+                <h4>kukatpally,hyderabad</h4>
+                <span>4.4km</span>
+            </div>
+        </div>
+
+
+        <div class="food-item">
+            <img src="https://b.zmtcdn.com/data/pictures/chains/7/91727/eaf07eb37f8f2aeb55107abf7f9f5cfc_featured_v2.jpg?output-format=webp"
+                width="250px" height="200px">
+
+            <div class="fooditem1">
+                <h3>verandah-THE PARK</h3>
+                <span>3.2</span>
+            </div>
+            <div class="address">
+                <h4>kompally,hyderabad</h4>
+                <span>4.2km</span>
+            </div>
+        </div>
+
+
+        <div class="food-item">
+            <img src="https://b.zmtcdn.com/data/pictures/0/21058610/c1f9c05e9b0402a1eaeac91de3db3834_featured_v2.jpg?output-format=webp"
+                width="250px" height="200px">
+
+            <div class="fooditem1">
+                <h3>HABITAT-CAFE</h3>
+                <span>4.3</span>
+            </div>
+            <div class="address">
+                <h4>Banjarahills,hyderabad</h4>
+                <span>6.2km</span>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
